@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  font-size: 1rem;
+  background-color: #ffffff;
+}
+
+.hidden {
+  display: none;
+}
+/* ========================================================= */
+
+/* DARK MODE AND LIGHT MODE SWITCH */
+header .modes {
+  display: flex;
+  justify-content: end;
+}
+
+header .modes * {
+  padding: 1.5em;
+  cursor: pointer;
+}
+
+/* ========================================================= */
+
+/* HEADER Designs*/
+
+header {
+  width: 100%;
+  height: 35vh;
+  background: url("images/back-img.png") #121212 no-repeat;
+  background-size: cover;
+}
+
+.text-content-header h1 {
+  font-size: 2.675rem;
+}
+
+.text-content-header a {
+  text-decoration: none;
+  font-weight: 700;
+  padding: 1.5em;
+}
+
+.text-content-header * {
+  color: #ffffff;
+}
+
+.text-content-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* justify-content: space-between; */
+}
+/* ========================================================= */
+/* SECTION 1*/
+
+/* search feature */
+.search-container {
+  height: 38px;
+  width: 90%;
+  margin: -18px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-container * {
+  height: 100%;
+  border: 1px solid grey;
+  padding: 0.5em;
+}
+
+.search-container input {
+  width: 80%;
+  border-radius: 7px 0 0 7px;
+  font-weight: 500;
+}
+
+.search-container button {
+  width: 20%;
+  border-radius: 0 7px 7px 0;
+  font-weight: 500;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+/* ========================================================= */
+
+/* INITIAL LOAD _ PAGE 1 */
+
+.initial-load-elements {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 8em 0;
+}
+
+.initial-load-elements h2 {
+  color: #dfdddd;
+  margin-top: 0.5em;
+}
+/* ====================================================== */
+/* ============ Card Design ================== */
+.main-cards {
+  padding-top: 2em;
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.card .img-card,
+.card .text-card {
+  margin: 1em;
+}
+
+.main-3 {
+  margin-top: 0.5em;
+  display: flex;
+  align-items: center;
+}
+
+.main-3 * {
+  margin: 0.4em;
+  font-weight: 500;
+}
+
+.plot {
+  color: #6b7280;
+}
+
+.card .text-card p {
+  font-size: 0.75rem;
+}
+
+.card .text-card .main-3 p {
+  font-size: 0.65rem;
+}
+
+#watchlist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#watchlist * {
+  margin: 0.2em;
+  cursor: pointer;
+}
+
+#watchlist img {
+  width: 16px;
+  height: 16px;
+}
+
+hr {
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+#img-card-el {
+  width: 99px;
+  height: 147.41px;
+}
+
+span {
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+#main-cards {
+  color: black;
+}
+
+/* ================================================== */
+/* WATCHLIST PAGE */
+/* Initial Load */
+.wat-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2em 0;
+}
+
+.wat-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.wat-btn * {
+  padding: 0 0.5em;
+}
+
+.initial-wat-load h4 {
+  color: #6b7280;
+}
+/* ================== */
+/* POPUP MESSAGE */
+#popup-f5 {
+  color: white;
+  font-size: 0.75rem;
+  background-color: black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0.3em;
+  border-radius: 20px;
+  display: none;
+}
+
+/* =========================WEB Version ======================================*/
+
+@media (min-width: 670px) {
+  /* Header */
+  .text-content-header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.7em;
+  }
+
+  /* SEARCH COnTainer */
+  .search-container {
+    width: 60%;
+  }
+
+  /*Card Element Changes  */
+  .card .text-card p {
+    font-size: 0.975rem;
+  }
+
+  .card .text-card .main-3 p {
+    font-size: 0.85rem;
+  }
+
+  /* POPUP MESSAGE */
+  #popup-f5 {
+    width: 20%;
+  }
+}

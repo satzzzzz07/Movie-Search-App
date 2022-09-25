@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Search App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="modes">
+          <img
+            src="images/night.png"
+            alt="darkmode"
+            id="night-mode"
+            onclick="setModes()"
+          />
+          <img
+            src="images/sun.png"
+            alt="lightmode"
+            id="light-mode"
+            class="hidden"
+            onclick="setModes()"
+          />
+        </div>
+        <div class="text-content-header">
+          <h1>Find your film</h1>
+          <a href="watchlist.html">My Watchlist</a>
+        </div>
+      </header>
+      <section class="container-main">
+        <!-- search elements -->
+        <div class="search-container">
+          <input type="text" id="search" placeholder="Eg. Game of Thrones" />
+          <button id="submit">Search</button>
+        </div>
+        <!-- Initial load elements -->
+        <div class="initial-load-elements" id="initial-load-elements">
+          <img src="images/Icon2.png" alt="Movies" />
+          <h2>Start Exploring</h2>
+        </div>
+        <!-- Card elements -->
+        <div class="main-cards" id="main-cards"></div>
+      </section>
+      <!--IGNORE BELOW -->
+      <div id="initial-wat-load" class="hidden"></div>
+      <div id="main-cards-watchlist" class="hidden"></div>
+      <h5 id="wat-h5" class="hidden"></h5>
+      <img class="hidden" id="black-wat" />
+      <img class="hidden" id="white-wat" />
+      <!-- IGNORE ABOVE -->
+    </main>
+    <script src="appModes.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
